@@ -72,16 +72,6 @@ export const overrideDataSource = (
         }
         
     }
-    else
-    {
-        throw Error(    
-            'The resolver named ' +
-            [typeName, fieldName, slotName, slotPlacement]
-                .filter(value => value)
-                .join('.')
-                 + ' has not been referenced by the CF template so its Data Source cannot be overridden.'
-        );
-    }
 
 };
 
